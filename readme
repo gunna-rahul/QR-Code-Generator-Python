@@ -1,0 +1,26 @@
+Simple QR Code Generator
+This is a minimalistic Python mini-project that generates a QR code for a given URL using the qrcode library. The generated QR code is saved as an image file.
+Requirements
+Python 3.x
+qrcode library
+Installation
+You can install the required library using the following command:
+pip install qrcode[pil]
+Usage
+Clone the repository or download the source code.
+git clone https://github.com/your-username/simple-qrcode-generator.git
+cd simple-qrcode-generator
+Modify the generate_qrcode.py file to include the desired URL.
+import qrcode as qr
+
+url = "https://github.com/gunna-rahul"
+img = qr.make(url)
+img.save("gunnarahul_github.png")
+print(f"QR code for {url} generated and saved as gunnarahul_github.png.")
+Run the script:
+python generate_qrcode.py
+The generated QR code image will be saved in the same directory as gunnarahul_github.png.
+Customize
+You can customize the script by changing the value of the url variable in the generate_qrcode.py file. Feel free to modify the script to accept user input or generate QR codes for different URLs.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
